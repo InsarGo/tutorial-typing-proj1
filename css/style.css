@@ -10,7 +10,7 @@ ul{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     line-height: 35px;
     font-weight: 600;
@@ -22,9 +22,9 @@ body{
 }
 
 .container{
-    max-width: 1720px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 125px;
+    padding: 0 45px;
    
 }
 
@@ -45,6 +45,7 @@ body{
 .logo{
     font-size: 30px;
     line-height: 45px;
+    padding-right: 75px;
 }
 
 .menu-link{
@@ -53,7 +54,7 @@ body{
 }
 
 .news{
-    padding: 44px 0 290px;
+    padding: 44px 0 100px;
 }
 
 .news-info{
@@ -68,19 +69,81 @@ body{
    
 }
 
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
 .news-text p{
     max-width: 362px;
-   
     font-weight: 600px;
-    font-size: 50px;
-    line-height: 75px;
+    font-size: 30px;
+    line-height: 45px;
+  
 }
 
- /* text-align: center; */
+h1{
+    text-align: center;
+}
 
 .news-text b{
-    max-width: 530;
+    max-width: 530px;
     font-weight: 600px;
 }
 
+.fon-img{
+   width: 50%;
+   height: 450px;
+}
+
+.tou-img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+@media(max-width:420px){
+    
+    .header{
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    .logo{
+        padding-right: 30px;
+    }
+
+    .menu{ 
+    text-transform: uppercase;
+    flex-direction: column;
+    text-align: end;
+    }
+
+    .news{
+        padding: 20px 0 30px;
+    }
+
+    .container{
+        padding: 0 20px;
+
+    }
+
+    .fon-img{
+        display:none;
+    }
+
+    .tou-img{
+    
+        max-width: 50%;
+
+    }
+
+    .news-text p{
+        padding: 0 0 5px;
+    }
+
+    .news-text p,
+    .news-text b{
+        max-width:100%;
+    }
+}
 
